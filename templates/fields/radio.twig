@@ -1,0 +1,14 @@
+<fieldset>
+
+  {% for value, option in options %}
+    <p>
+      <label for="{{ option.name }}">
+        <input type="radio" class="radio" id="{{ option.name }}" name="{{ name }}"
+               value="{{ value }}" {{ option.checked|raw }}/>
+        {{ option.label }}
+      </label>
+    </p>
+  {% endfor %}
+
+  <p class="description">{{ desc }}</p>
+</fieldset>

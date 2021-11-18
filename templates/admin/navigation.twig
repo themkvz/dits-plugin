@@ -1,0 +1,5 @@
+<h2 class="nav-tab-wrapper">
+  {% for tab in sections %}
+    <a href="#{{ tab.id }}" class="nav-tab" id="{{ tab.id }}-tab">{{ tab.title }}</a>
+  {% endfor %}
+</h2>

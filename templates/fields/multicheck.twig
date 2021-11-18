@@ -1,0 +1,14 @@
+<fieldset>
+  <input type="hidden" name="{{ name }}" value=""/>
+
+  {% for value, option in options %}
+    <p>
+      <label for="{{ option.name }}">
+        <input type="checkbox" class="checkbox" id="{{ option.name }}" name="{{ option.name }}" value="{{ value }}" {{ option.checked|raw }}/>
+        {{ option.label }}
+      </label>
+    </p>
+  {% endfor %}
+
+  <p class="description">{{ desc }}</p>
+</fieldset>

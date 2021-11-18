@@ -1,0 +1,20 @@
+{
+  "name": "dits/plugin-composer-name",
+  "version": "0.0.1",
+  "type": "wordpress-plugin",
+  "repository": "https://github.com/themkvz/dits-plugin",
+  "autoload": {
+    "psr-4": {
+      "Dits\\PluginNamespace\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "^5.3",
+    "twig/twig": "^3.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^5.3"
+  }
+}

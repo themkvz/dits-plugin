@@ -1,0 +1,58 @@
+# Copyright (C) 2021 dits-plugin-slug-to-replace
+# This file is distributed under the same license as the dits-plugin-slug-to-replace package.
+msgid ""
+msgstr ""
+"Project-Id-Version: dits-plugin-slug-to-replace\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Activator.php:41
+msgid "requires WordPress %s or higher!"
+msgstr ""
+
+#: src/Activator.php:55
+msgid "Thank you for using %s!"
+msgstr ""
+
+#: src/Activator.php:56
+msgid "You are awesome"
+msgstr ""
+
+#: src/Admin/AdminPage.php:32, src/Admin/AdminPage.php:41, src/Admin/AdminPage.php:108
+msgid "Dits_Plugin_Name"
+msgstr ""
+
+#: src/Admin/AdminPage.php:50
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/AdminPage.php:113
+msgid "General"
+msgstr ""
+
+#: src/Admin/Settings.php:91
+msgid "Choose File"
+msgstr ""
+
+#: src/Admin/Settings.php:309
+msgid "Select image"
+msgstr ""
+
+#: src/Admin/Settings.php:310
+msgid "Select the image"
+msgstr ""
+
+#: src/Admin/Settings.php:311
+msgid "Use image"
+msgstr ""
+
+#: src/Admin/Settings.php:312
+msgid "Clear"
+msgstr ""

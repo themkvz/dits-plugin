@@ -1,0 +1,18 @@
+<div class="metabox-holder">
+  {% for section in sections %}
+    <div id="{{ section.id }}" class="js-dits-section" style="display: none;">
+
+      {% if section.callback %}
+        {{ section.do_settings_sections|raw }}
+      {% else %}
+        <form method="post" action="options.php">
+          {{ section.settings_fields|raw }}
+          {{ section.do_settings_sections|raw }}
+          {{ section.submit|raw }}
+        </form>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+
+</div>

@@ -1,0 +1,39 @@
+name: Generate Installable Plugin, and Upload as Release Asset
+on:
+  release:
+    types: [ published ]
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: yarn
+      - name: Build assets
+        run: yarn build
+      - name: Build project
+        run: |
+          composer install --no-dev --optimize-autoloader
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'dits-plugin-slug-to-replace.zip'
+          exclusions: '*.git* /*node_modules/* .*'
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: dits-plugin-slug-to-replace
+          path: dits-plugin-slug-to-replace.zip
+      - name: Upload to release
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: dits-plugin-slug-to-replace.zip application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

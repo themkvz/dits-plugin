@@ -1,0 +1,26 @@
+<img id="{{ name }}_preview" src="{{ src }}"/>
+<br>
+
+<input
+  type="button"
+  class="js-dits-image-upload button"
+  id="{{ name }}_button"
+  data-uploader_title="{{ text.uploader_title }}"
+  data-uploader_button_text="{{ text.uploader_button }}"
+  value="{{ text.select }}"
+/>
+
+<input
+  type="button"
+  class="js-dits-image-remove button"
+  id="{{ name }}_delete"
+  value="{{ text.clear }}"
+/>
+
+<input
+  type="hidden"
+  class="js-dits-image-data"
+  id="{{ name }}"
+  name="{{ name }}"
+  value="{{ value }}"
+/>

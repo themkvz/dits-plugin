@@ -1,0 +1,7 @@
+<select class="{{ size }}-text" name="{{ name }}" id="{{ name }}">
+  {% for value, option in options %}
+    <option value="{{ value }}" {{ option.selected }}>{{ option.label }}</option>
+  {% endfor %}
+</select>
+
+<p class="description">{{ desc }}</p>
